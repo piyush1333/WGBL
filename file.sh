@@ -12,10 +12,10 @@ cd $folderName
 
 for i in 1 2 3 4 
 do
-echo $i >"$folderName$i.txt"
+echo $i>"$folderName$i.txt"
 done
 
-cd..
+cd ..
 
 zip -r $folderName.zip $folderName 
 
@@ -41,7 +41,7 @@ cd $reverseFolder
 
 rm -rf $folderName
 
-find -name "*.txt" -print -exec cat{} \; 
+find -name "*.txt" -print -exec cat {} \; 
 
 
 
